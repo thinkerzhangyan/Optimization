@@ -2,9 +2,11 @@ package tk.thinkerzhangyan.optimization;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.support.v4.util.LruCache;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AnimatorActivity extends AppCompatActivity {
@@ -23,6 +25,8 @@ public class AnimatorActivity extends AppCompatActivity {
         objectAnimator = ObjectAnimator.ofFloat(mTextView,"rotation",0,360).setDuration(2000);
         objectAnimator.setRepeatCount(ValueAnimator.INFINITE);
         objectAnimator.start();
+
+
     }
 
     @Override
